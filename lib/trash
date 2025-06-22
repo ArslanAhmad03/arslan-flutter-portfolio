@@ -1,0 +1,24 @@
+                        // GlassContainer.clearGlass(
+                        //   width: 70,
+                        //   height: 30,
+                        //   borderColor: Color(0xFFFF5722),
+                        //   borderRadius: BorderRadius.circular(24.0),
+                        //   child: Center(child: Text('Hellow!')),
+                        // ),
+
+Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+
+                            Row(
+                              children: [
+                                CircleAvatar(backgroundColor: Color(0xFFFF5722), child: Text('AA')),
+                                SizedBox(width: 4.0),
+                                Text('Arslan', style: TextStyle(color: Color(0xFFFF5722), fontSize: 20, fontWeight: FontWeight.bold))
+                              ],
+                            ),
+
+                            Text('Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.\nUt elit tellus, luctus nec ullamcorper\nmattis, pulvinar dapibus leo.'),
+
+                          ],
+                        ),
