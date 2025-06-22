@@ -5,10 +5,10 @@ class AnimatedIconButton extends StatefulWidget {
   final IconData iconData;
   final VoidCallback onTap;
   const AnimatedIconButton({
-    Key? key,
+    super.key,
     required this.iconData,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   State<AnimatedIconButton> createState() => _AnimatedIconButtonState();

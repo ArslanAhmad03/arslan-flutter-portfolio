@@ -3,16 +3,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AnimatedContact extends StatefulWidget {
   final IconData iconData;
-  final String title;
-  final String subtitle;
+  final String title, subtitle;
   final VoidCallback onTap;
-  const AnimatedContact({
-    Key? key,
+  const AnimatedContact({super.key,
     required this.iconData,
-    required this.title,
-    required this.subtitle,
-    required this.onTap,
-  }) : super(key: key);
+    required this.title, required this.subtitle, required this.onTap,
+  });
 
   @override
   State<AnimatedContact> createState() => _AnimatedContactState();
@@ -40,6 +36,7 @@ class _AnimatedContactState extends State<AnimatedContact> {
             color: isHovering ? Colors.grey : Colors.white,
           ),
         ),
+        height: isHovering ? 80 : 70,
         margin: EdgeInsets.only(top: 10.0),
         padding: const EdgeInsets.all(8.0),
         child: Row(
